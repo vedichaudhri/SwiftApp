@@ -10,14 +10,21 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var texxt1: UITextField!
+    
+    @IBOutlet weak var text2: UITextField!
+    
     @IBOutlet weak var theLabel: UILabel!
-    var tapCount = 0;
+    
+   // var tapCount = 0;
     @IBAction func buttonTapped(_ sender: Any) {
-        theLabel.text = "Hello There!"
-        tapCount += 1;
-        if (tapCount >= 10) {
-            theLabel.text = "You tapped 10 times!"
-        }
+//        theLabel.text = "Hello There!"
+//        tapCount += 1;
+//        if (tapCount >= 10) {
+//            theLabel.text = "You tapped 10 times!"
+//        }
+        print(texxt1.text)
+        print(text2.text)
     }
     
 
@@ -28,7 +35,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        self.view.backgroundColor = UIColor.red  //change color to red
+        //self.view.backgroundColor = UIColor.red  //change color to red
         
     }
 
