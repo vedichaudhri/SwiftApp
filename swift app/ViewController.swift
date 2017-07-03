@@ -23,7 +23,13 @@ class ViewController: UIViewController {
 //        if (tapCount >= 10) {
 //            theLabel.text = "You tapped 10 times!"
 //        }
-        theLabel.text = "Answer is \(Double(texxt1.text!)! + Double(text2.text!)!)"
+        let condition :Bool = true
+        
+        if condition {
+            theLabel.text = "Answer is \(Double(texxt1.text!)! + Double(text2.text!)!)"
+        } else  {
+            theLabel.text = "Answer is \(Double(texxt1.text!)! - Double(text2.text!)!)"
+        }
 //        print(texxt1.text!)
 //        print(text2.text!)
     }
